@@ -47,8 +47,8 @@ if (empty($_GET["nome"])) {
     $ess ="{ Nome: ".$nome." ,Sobrenome: ".$sobrenome.", Email: ".$email." , Idade: ".$idade." , Data: ".$data." , Parente: ".$parente." , Origem: ".$origem.",
          Endereco: ".$endereco.", Endereço Completo: ".$enderecorua.", Telefone:".$telefone." }\n";
 
-    //$abre =@fopen("banco.txt","a+");
-    //$escreve =fwrite($abre, $ess);
+    $abre =@fopen("banco.txt","a+");
+    $escreve =fwrite($abre, $ess);
 
 }
 
